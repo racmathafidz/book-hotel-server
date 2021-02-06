@@ -10,7 +10,7 @@ const flash = require('connect-flash')
 
 // Connect Mongoose
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://127.0.0.1:27017/db_staycation', {useNewUrlParser: true, useUnifiedTopology: true,
+mongoose.connect('mongodb+srv://racmat:uzukipyon@cluster0.k6v2j.mongodb.net/db_staycation?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false});
 
