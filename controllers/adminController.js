@@ -254,7 +254,7 @@ module.exports = {
             const alertMessage = req.flash('alertMessage')
             const alertStatus = req.flash('alertStatus')
             const alert = { message: alertMessage, status: alertStatus }
-            res.render('admin/item/view_item', { title: "Staycation | Image Item", alert, item, action: 'show image' })
+            res.render('admin/item/view_item', { title: "Staycation | Image Item", alert, item, action: 'show image', user: req.session.user })
         } catch (error) {
             req.flash('alertMessage', `${error.message}`)
             req.flash('alertStatus', 'danger')
