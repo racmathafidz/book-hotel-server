@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 const methodOverride = require('method-override')
 const session = require('express-session')
 const flash = require('connect-flash')
+var cors = require('cors')
 
 // Connect Mongoose
 const mongoose = require('mongoose')
